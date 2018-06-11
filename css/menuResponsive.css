@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ----------------
+    MENU RESPONSIVE
+---------------- */
+
+
+@media screen and (min-width: 960px) {
+	.menuResponsive {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 960px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* ========== Partie 2 ========== */
+
+    #bouton-bascule-label {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        left: 0px;
+        height:50px;
+        width: 50px;
+        display: block;
+        position: fixed;
+        background-color: #373c49;
+
+        z-index: 1;
+            transition: .6s;
+    }
+
+    #bouton-bascule-label:before {
+        padding-left: 5px;
+        display: block;
+        position: absolute;
+        width: 24px;
+    }
+    
+    #bouton-bascule-label i{
+        color: #ff751a;
+        line-height: 1;
+        font-size: 2rem;
+        margin-top: 9px;
+        margin-left: 6px;
+        cursor: pointer;
+    }
+
+    header {
+        font-family: "Gloria Hallelujah",sans-serif;
+        color: #ff751a;
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        background: #373c49;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+        text-align: center;
+        padding: 10px 0 10px;
+        font-size: 30px;
+        line-height: 30px;
+        transition: .6s;
+    }
+
+    /* ========== Partie 3 ========== */
+
+    #navigation {
+        position: fixed;
+        top: 0;
+        left:-200px;
+        height: 100%;
+        width: 200px;
+        background: #373c49;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+        color: #d0d0d0;
+        padding: 0px;
+        transition: .6s;
+    }
+
+    /* ========== Partie 4 ========== */
+
+    #bouton-bascule:checked {
+        height: 100%;
+        width: calc(100% - 200px);
+    }
+
+    #bouton-bascule:checked ~ #bouton-bascule-label, #bouton-bascule:checked ~ header {
+        left: 200px;
+    }
+
+    #bouton-bascule:checked ~ #navigation {
+        left: 0px;
+    }
+
+    #bouton-bascule:checked ~ #page-content {
+        margin-left: 200px;
+    }
+
+    /* ========== Partie 5 ========== */
+
+    #navigation > ul {
+        list-style-type:none;
+    }
+
+    #navigation > ul p {
+        font-family: "Open Sans", Arial, sans-serif;
+        display: block;
+        padding: 30px 0 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #navigation > ul .link {
+        font-family: "Open Sans", Arial, sans-serif;
+        display: block;
+        padding: 10px 40px 10px;
+        color: #d0d0d0;
+        text-decoration: none;
+    }
+
+    #navigation ul link:hover {
+        transition: 0.4s;
+        color: #ff751a;
+    }
+    
+    #navigation ul li span {
+        width: 100%;
+        font-family: 'Open Sans';
+    }
+}

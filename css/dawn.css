@@ -1,0 +1,296 @@
+/* ======================== FORMS ======================== */
+.dawn-form {
+	max-width: 960px;
+	margin: auto;
+	clear: both;
+}
+
+.i-1 {width: 68px;}
+.i-2 {width: 144px;}
+.i-3 {width: 220px;}
+.i-4 {width: 300px;}
+.i-5 {width: 388px;}
+.i-6 {width: 468px;}
+.i-7 {width: 548px;}
+.i-8 {width: 628px;}
+.i-9 {width: 708px;}
+.i-10 {width: 788px;}
+.i-11 {width: 868px;}
+.i-12 {width: 948px;}
+.i-clear {clear: both;}
+
+.i-l {margin-left: 6px;}
+.i-r {margin-right: 6px;}
+
+.i-1,
+.i-2,
+.i-3,
+.i-4,
+.i-5,
+.i-6,
+.i-7,
+.i-8,
+.i-9,
+.i-10,
+.i-11,
+.i-12 {
+	float : left;
+	padding: 5px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	box-sizing: border-box;
+}
+
+.dawn-form input:invalid {
+	box-shadow: none !important;
+	outline: none;
+	border: 1px solid #ff6b6b;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+  	-o-appearance: none;
+}
+
+textarea {
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 160px;
+  	font-family: 'Open Sans';
+	font-size: 0.9em;
+}
+
+.i-1:focus,
+.i-1:hover,
+.i-2:focus,
+.i-2:hover,
+.i-3:focus,
+.i-3:hover,
+.i-4:focus,
+.i-4:hover,
+.i-5:focus,
+.i-5 :hover,
+.i-6:focus,
+.i-6 :hover,
+.i-7:focus,
+.i-7 :hover,
+.i-8:focus,
+.i-8:hover,
+.i-9:focus,
+.i-9:hover,
+.i-10:focus,
+.i-10:hover,
+.i-11:focus,
+.i-11:hover,
+.i-12:focus,
+.i-12:hover
+.dawn-form textarea:focus {
+	border-color: #819de4;
+	color: #373c49;
+}
+
+@media only screen and (max-width: 960px) {
+	.dawn-form {width : 100%;}
+
+	.dawn-form > inpur {margin : 0 1%;}
+
+	.i-l {margin-left: 0px;}
+	.i-r {margin-right: 0px;}
+
+	.i-1,
+	.i-2,
+	.i-3,
+	.i-4,
+	.i-5,
+	.i-6,
+	.i-7,
+	.i-8,
+	.i-9,
+	.i-10,
+	.i-11,
+	.i-12 {
+		width : 98%;
+		float : none;
+	}
+}
+
+/* ======================== CARDS ======================== */
+.dawn-card-b,
+.dawn-card-g,
+.dawn-card-r,
+.dawn-card-o,
+.dawn-card{
+    width: 98%;
+	min-height: 180px;
+    margin: 60px auto 0 auto;
+	background-color: white;
+	border: 2px solid #819de4;
+	border-radius: 6px;
+}
+
+.dawn-card-pic
+{
+    width: 90%;
+	height: 280px;
+    margin: auto 0 auto;
+	padding: 0px;
+	background-position: left;
+	overflow: hidden;
+}
+
+.dawn-card-content {
+    font-family: 'Open Sans', sans-serif;
+    width: 90%;
+    margin: 0 auto 16px auto;
+    padding: 10px;
+    text-align: left;
+	overflow: hidden;
+	letter-spacing: 0.5px;
+}
+
+.dawn-card-content h2,
+.dawn-card-content p,
+.dawn-card-content b
+{padding-top: 10px;}
+
+.dawn-card a {color: #819de4;}
+
+.dawn-card-r {background-color: #ff6565;}
+.dawn-card-b {background-color: #819de4;}
+.dawn-card-g {background-color: #0fb578;}
+.dawn-card-o {background-color: #e49847;}
+
+.dawn-card-r h1,
+.dawn-card-b h1,
+.dawn-card-g h1,
+.dawn-card-o h1
+{color: #373c49;}
+
+.dawn-card-r p,
+.dawn-card-b p,
+.dawn-card-g p,
+.dawn-card-o p
+{color: white;}
+
+.dawn-card-r a {color: #00995c;}
+.dawn-card-b a {color: #7777ff;}
+.dawn-card-g a {color: #0c9362}
+.dawn-card-o a {color: #bf7424;}
+
+.dawn-card-r a:hover,
+.dawn-card-b a:hover,
+.dawn-card-g a:hover,
+.dawn-card-o a:hover
+{color: white;}
+
+@media only screen and (max-width: 960px) {
+}
+
+/* ======================== TYPO ======================== */
+
+h1, h2, h3, h4, h5, h6, p, i, b, u, small, span, strong
+{font-family: 'Open Sans', sans-serif; word-spacing: 0.2em;}
+
+h1, h2, h3, h4, h5, h6
+{font-weight: 200;}
+
+h1 {font-size: 2.4rem;}
+h2 {font-size: 2.0rem;}
+h3 {font-size: 1.6rem;}
+
+h4, h5, h6 {
+	font-size: 1.2rem;
+	line-height: 1.4em;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.4rem;
+}
+
+p, i, b, u, span
+{font-size: 1.0rem; line-height: 1.6rem;}
+
+small {font-size: 0.8rem;}
+
+.w {color: #e6e6e6;}
+.d {color: #373c49;}
+.gy {color: #c5d4d7;}
+.r {color: #ff6565;}
+.o {color: #e49847;}
+.g {color: #0fb578;}
+.b {color: #819de4;}
+.p {color: #c643cf;}
+
+/* ======================== GRID ======================== */
+
+.dawn-grid {
+	max-width: 960px;
+	margin: auto;
+	clear: both;
+}
+
+.dawn-grid > div {
+	float : left;
+	margin : 0 6px;
+}
+
+.g-1 {width: 68px;}
+.g-2 {width: 148px;}
+.g-3 {width: 216px;}
+.g-4 {width: 308px;}
+.g-5 {width: 388px;}
+.g-6 {width: 468px;}
+.g-7 {width: 548px;}
+.g-8 {width: 628px;}
+.g-9 {width: 708px;}
+.g-10 {width: 788px;}
+.g-11 {width: 868px;}
+.g-12 {width: 948px;}
+.g-clear {clear: both;}
+
+.g-3 {margin-top: 20px;}
+
+@media only screen and (max-width: 960px) {
+	.dawn-grid {width : 100%;}
+
+	.dawn-grid > div {margin : 0 1%;}
+
+	.g-1,
+	.g-2,
+	.g-3,
+	.g-4,
+	.g-5,
+	.g-6,
+	.g-7,
+	.g-8,
+	.g-9,
+	.g-10,
+	.g-11,
+	.g-12 {
+		width : 98%;
+		float : none;
+	}
+}
+
+/* ======================== SCROLL BAR ======================== */
+
+/* Only for Webkit Browsers */
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background-color: #b7acac;
+}
+
+::-webkit-scrollbar-thumb:active {background-color: #7a7676;}

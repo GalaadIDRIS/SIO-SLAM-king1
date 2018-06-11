@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ----------------
+    MENU
+---------------- */
+
+.menu {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+    z-index: 1;
+}
+
+.menu {
+	height: 50px;
+	top: 0px;
+	background-color: #373c49;
+}
+
+.menu-bar {
+    max-width: 960px;
+	margin: auto;
+    clear: both;
+}
+
+.menu-title,
+.menu-links {
+    float : left;
+    margin : 0 6px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+.menu-title {width: 228px;}
+.menu-links {width: 708px;}
+
+.menu h1 {
+	margin-top: 0px;
+	padding: 0;
+	color: #ff751a;
+	font-size: 26px;
+	font-family: "Gloria Hallelujah",sans-serif;
+  font-weight: 400;
+}
+
+.menu li .link {
+	display: block;
+	margin: 0 40px 0 0;
+	color: #d0d0d0;
+	background: #373c49;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 50px;
+	height: 50px;
+}
+
+.menu li .link:hover {color: #ff751a;}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	display: inline-block;
+	float: left;
+}
+
+.menu li .user {
+	border: 0px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+	.menu {display: none;}
+}

@@ -1,0 +1,41 @@
+/* ==================
+    FOOTER
+================== */
+
+footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: #373c49;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    text-align: left;
+}
+
+footer p {
+    color: #e49847;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+    
+footer ul {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e2e2e2;
+    list-style: none;
+    font-family: 'Open Sans';
+}
+
+footer ul li {display: inline-block;}
+
+footer ul li a{
+    margin: 10px 0px 10px 10px;
+    text-decoration: none;
+    color: #e2e2e2;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    color: #e2e2e2;
+}

@@ -1,0 +1,28 @@
+/* ----------------
+    BARRE
+---------------- */
+
+.barre {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6px;
+    z-index: 1;
+    background-color: white;
+    font-family: 'Open Sans';
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.barre .mobile {display: none;}
+
+.barre h3 {display: inline;}
+
+@media screen and (max-width: 960px) {
+    .barre .ordi {display: none;}
+    .barre .mobile {display: inline-block;}
+    .barre {height: 50px;}
+}
